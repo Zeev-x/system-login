@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[TITLE]</title>
+  </head>
+  <body>
+    <nav>
+      <a class="logo" href="/">Welcome</a>
+      <ul class="navigation">
+        <li><a href="/home">Home</a></li>
+        <li><a class="active" href="/dashboard">Dashboard</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h3 class="title">Selamat datang [NAME_USER]</h3>
+      <p>Selamat datang di <i class="cont">Dashboard</i>.</p>
+    </div>
+    <div class="container">
+      <h3 class="title">Informasi Pengguna</h3>
+      <p>
+        <a>Username : [USER_NAME]</a><br><br>
+        <a>Email : [USER_EMAIL]</a>
+      </p>
+    </div>
+    <div class="container">
+      <h3 class="title">Owner</h3>
+      <p>Owner website ini adalah <a class="cont" href="https://github.com/Zeev-x">Zeev-X</a></p>
+    </div>
+    <div class="container">
+      <h3 class="title">Other</h3>
+      <p>Ingin mengakhiri sesi ini? <a class="cont" href="/logout">Log out</a></p>
+    </div>
+    <style>
+      body {
+        background-color: #e3e3e3;
+        padding: 0px;
+        margin: 0px;
+      }
+      .logo {
+        font-family: Courier;
+        color: #18a0ff;
+        font-size: 30px;
+        font-weight: bold;
+      }
+      ul.navigation {
+        list-style: none;
+      }
+      a {
+        text-decoration: none;
+      }
+      nav {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        align-items: center;
+        height: 60px;
+        background-clip: #FFFFFF;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+        padding: 0px 5%;
+      }
+      nav ul {
+        display: flex;
+      }
+      nav ul li a {
+        margin: 30px;
+        font-family: Courier;
+        color: #505050;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .active {
+        color: #0cbaff;
+        font-weight: bold;
+      }
+      .container {
+        padding: 20px;
+        max-width: 80%;
+        margin: 20px auto;
+        background-color: white;
+        border-radius: 10px;
+        font-size: 80%;
+        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+      }
+      .cont {
+        color: #00b6ff;
+      }
+      .title {
+        color: #0a9aff;
+      }
+    </style>
+  </body>
+</html>
